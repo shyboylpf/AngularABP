@@ -1,0 +1,401 @@
+DEBUG 2020-08-09 02:37:15,460 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-08-09 02:37:15,566 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-08-09 02:37:15,580 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.Web.Host.Startup.LiusStoreWebHostModule, LiusStore.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,581 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.LiusStoreWebCoreModule, LiusStore.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,582 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.LiusStoreApplicationModule, LiusStore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,583 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.LiusStoreCoreModule, LiusStore.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,584 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,585 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,585 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.EntityFrameworkCore.LiusStoreEntityFrameworkModule, LiusStore.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,586 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,587 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,587 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,587 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,587 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,588 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:15,590 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-08-09 02:37:15,661 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-08-09 02:37:15,661 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-08-09 02:37:15,661 [1    ] o.Configuration.LanguageManagementConfig - Converted LiusStore (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-08-09 02:37:15,661 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-08-09 02:37:15,991 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: LiusStore.EntityFrameworkCore.LiusStoreDbContext, LiusStore.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 02:37:16,363 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-08-09 02:37:16,428 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-08-09 02:37:16,472 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-08-09 02:37:16,492 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LiusStore
+DEBUG 2020-08-09 02:37:16,523 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-08-09 02:37:16,562 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-08-09 02:37:16,584 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[LiusStore.MultiTenancy.Tenant, LiusStore.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[LiusStore.Authorization.Users.User, LiusStore.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-08-09 02:37:16,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-08-09 02:37:16,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-08-09 02:37:16,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Users.Dto.CreateUserDto
+DEBUG 2020-08-09 02:37:16,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Users.Dto.UserDto
+DEBUG 2020-08-09 02:37:16,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-08-09 02:37:16,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-08-09 02:37:16,623 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Roles.Dto.PermissionDto
+DEBUG 2020-08-09 02:37:16,623 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-08-09 02:37:16,623 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.MultiTenancy.Dto.TenantDto
+INFO  2020-08-09 02:37:18,857 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,zh-Hans,ja
+INFO  2020-08-09 02:37:19,173 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\shybo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-08-09 02:37:19,243 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-08-09 02:37:19,406 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Web.Host.Controllers.HomeController.Index (LiusStore.Web.Host)'
+INFO  2020-08-09 02:37:20,272 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LiusStore.Web.Host.Controllers.HomeController (LiusStore.Web.Host).
+INFO  2020-08-09 02:37:20,678 [6    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-08-09 02:37:20,684 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Web.Host.Controllers.HomeController.Index (LiusStore.Web.Host) in 406.9638ms
+INFO  2020-08-09 02:37:20,684 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Web.Host.Controllers.HomeController.Index (LiusStore.Web.Host)'
+INFO  2020-08-09 02:37:20,695 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1453.0826ms 302 
+INFO  2020-08-09 02:37:20,704 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2020-08-09 02:37:20,721 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 17.2928ms 301 
+INFO  2020-08-09 02:37:20,727 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-08-09 02:37:20,754 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 27.6362ms 200 text/html;charset=utf-8
+INFO  2020-08-09 02:37:20,777 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2020-08-09 02:37:20,777 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2020-08-09 02:37:20,781 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2020-08-09 02:37:20,781 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2020-08-09 02:37:20,781 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2020-08-09 02:37:20,790 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\abp\5.7.0\aspnet-core\src\LiusStore.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2020-08-09 02:37:20,790 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\abp\5.7.0\aspnet-core\src\LiusStore.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2020-08-09 02:37:20,790 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 9.8037ms 200 application/javascript
+INFO  2020-08-09 02:37:20,790 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 9.7033ms 200 application/javascript
+INFO  2020-08-09 02:37:20,794 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2020-08-09 02:37:20,794 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2020-08-09 02:37:20,796 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2020-08-09 02:37:20,796 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.5357ms 200 text/css
+INFO  2020-08-09 02:37:20,796 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 15.2471ms 200 application/javascript
+INFO  2020-08-09 02:37:20,796 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.3444ms 200 application/javascript
+INFO  2020-08-09 02:37:21,355 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-08-09 02:37:21,361 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 02:37:21,376 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller LiusStore.Web.Host.Controllers.AntiForgeryController (LiusStore.Web.Host).
+INFO  2020-08-09 02:37:21,394 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-08-09 02:37:21,402 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:37:21,435 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2020-08-09 02:37:21,437 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2020-08-09 02:37:21,437 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.4273ms 200 image/png
+INFO  2020-08-09 02:37:21,511 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host) in 135.408ms
+INFO  2020-08-09 02:37:21,512 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 02:37:21,512 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 156.7252ms 200 application/json; charset=utf-8
+INFO  2020-08-09 02:37:21,517 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 122.8176ms 200 application/json;charset=utf-8
+INFO  2020-08-09 02:37:42,374 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 51
+INFO  2020-08-09 02:37:42,380 [14   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-08-09 02:37:42,380 [14   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-08-09 02:37:42,383 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core)'
+INFO  2020-08-09 02:37:42,397 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LiusStore.Models.TokenAuth.AuthenticateResultModel] Authenticate(LiusStore.Models.TokenAuth.AuthenticateModel) on controller LiusStore.Controllers.TokenAuthController (LiusStore.Web.Core).
+WARN  2020-08-09 02:37:42,662 [23   ] icrosoft.AspNetCore.Identity.UserManager - Invalid password for user 1.
+WARN  2020-08-09 02:37:42,930 [14   ] Mvc.ExceptionHandling.AbpExceptionFilter - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at LiusStore.Controllers.TokenAuthController.GetLoginResultAsync(String usernameOrEmailAddress, String password, String tenancyName) in D:\abp\5.7.0\aspnet-core\src\LiusStore.Web.Core\Controllers\TokenAuthController.cs:line 192
+   at LiusStore.Controllers.TokenAuthController.Authenticate(AuthenticateModel model) in D:\abp\5.7.0\aspnet-core\src\LiusStore.Web.Core\Controllers\TokenAuthController.cs:line 55
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2020-08-09 02:37:42,934 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:37:42,938 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core) in 540.871ms
+INFO  2020-08-09 02:37:42,938 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core)'
+INFO  2020-08-09 02:37:42,939 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 565.8569ms 500 application/json; charset=utf-8
+INFO  2020-08-09 02:39:22,716 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetRoles  
+INFO  2020-08-09 02:39:22,720 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Roles.RoleAppService.GetRolesAsync (LiusStore.Application)'
+INFO  2020-08-09 02:39:22,737 [30   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.ListResultDto`1[LiusStore.Roles.Dto.RoleListDto]] GetRolesAsync(LiusStore.Roles.Dto.GetRolesInput) on controller LiusStore.Roles.RoleAppService (LiusStore.Application).
+WARN  2020-08-09 02:39:22,747 [30   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+INFO  2020-08-09 02:39:22,748 [30   ] c.Infrastructure.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2020-08-09 02:39:22,748 [30   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:39:22,750 [30   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Roles.RoleAppService.GetRolesAsync (LiusStore.Application) in 12.9559ms
+INFO  2020-08-09 02:39:22,751 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Roles.RoleAppService.GetRolesAsync (LiusStore.Application)'
+INFO  2020-08-09 02:39:22,751 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 35.0884ms 401 application/json; charset=utf-8
+INFO  2020-08-09 02:39:58,808 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-08-09 02:39:58,816 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7.9915ms 200 text/html;charset=utf-8
+INFO  2020-08-09 02:39:58,844 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2020-08-09 02:39:58,844 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2020-08-09 02:39:58,893 [29   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.swagger.js was not modified
+INFO  2020-08-09 02:39:58,894 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 50.0681ms 304 application/javascript
+INFO  2020-08-09 02:39:58,896 [32   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.js was not modified
+INFO  2020-08-09 02:39:58,897 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 52.8301ms 304 application/javascript
+INFO  2020-08-09 02:39:59,069 [33   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-08-09 02:39:59,071 [33   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 02:39:59,076 [33   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller LiusStore.Web.Host.Controllers.AntiForgeryController (LiusStore.Web.Host).
+INFO  2020-08-09 02:39:59,085 [32   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:39:59,086 [32   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host) in 10.0446ms
+INFO  2020-08-09 02:39:59,086 [32   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 02:39:59,087 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.2112ms 200 application/json; charset=utf-8
+INFO  2020-08-09 02:39:59,106 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-08-09 02:39:59,117 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2020-08-09 02:39:59,119 [32   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2020-08-09 02:39:59,119 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.3221ms 200 image/png
+INFO  2020-08-09 02:39:59,133 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 26.6062ms 200 application/json;charset=utf-8
+INFO  2020-08-09 02:40:05,742 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-08-09 02:40:05,765 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.1138ms 200 application/json;charset=utf-8
+INFO  2020-08-09 02:40:05,950 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/favicon.ico  
+INFO  2020-08-09 02:40:05,952 [32   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.1427ms 404 
+INFO  2020-08-09 02:53:41,823 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2020-08-09 02:53:41,824 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:53:41,826 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3.261ms 204 
+INFO  2020-08-09 02:53:41,827 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2020-08-09 02:53:41,828 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:53:41,830 [52   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)'
+INFO  2020-08-09 02:53:41,838 [52   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GetAll() on controller Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController (Abp.AspNetCore).
+INFO  2020-08-09 02:53:42,123 [52   ] tonsoftJson.NewtonsoftJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:53:42,153 [52   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 314.3959ms
+INFO  2020-08-09 02:53:42,153 [52   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)'
+INFO  2020-08-09 02:53:42,153 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 325.6178ms 200 application/json; charset=utf-8
+INFO  2020-08-09 02:53:42,164 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2020-08-09 02:53:42,164 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:53:42,164 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 0.3918ms 204 
+INFO  2020-08-09 02:53:42,167 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2020-08-09 02:53:42,167 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:53:42,169 [52   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Sessions.SessionAppService.GetCurrentLoginInformations (LiusStore.Application)'
+INFO  2020-08-09 02:53:42,177 [52   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing controller action with signature System.Threading.Tasks.Task`1[LiusStore.Sessions.Dto.GetCurrentLoginInformationsOutput] GetCurrentLoginInformations() on controller LiusStore.Sessions.SessionAppService (LiusStore.Application).
+INFO  2020-08-09 02:53:42,206 [52   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:53:42,214 [52   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Sessions.SessionAppService.GetCurrentLoginInformations (LiusStore.Application) in 36.626ms
+INFO  2020-08-09 02:53:42,214 [52   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Sessions.SessionAppService.GetCurrentLoginInformations (LiusStore.Application)'
+INFO  2020-08-09 02:53:42,214 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 47.337ms 200 application/json; charset=utf-8
+INFO  2020-08-09 02:55:10,131 [57   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2020-08-09 02:55:10,132 [57   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:10,133 [57   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.6438ms 204 
+INFO  2020-08-09 02:55:10,136 [57   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2020-08-09 02:55:10,136 [57   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:10,138 [57   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)'
+INFO  2020-08-09 02:55:10,144 [57   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GetAll() on controller Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController (Abp.AspNetCore).
+INFO  2020-08-09 02:55:10,171 [57   ] tonsoftJson.NewtonsoftJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:55:10,175 [57   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 30.5295ms
+INFO  2020-08-09 02:55:10,175 [57   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)'
+INFO  2020-08-09 02:55:10,176 [57   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 40.4435ms 200 application/json; charset=utf-8
+INFO  2020-08-09 02:55:10,186 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2020-08-09 02:55:10,187 [58   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:10,187 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 0.9104ms 204 
+INFO  2020-08-09 02:55:10,190 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2020-08-09 02:55:10,190 [58   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:10,192 [58   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Sessions.SessionAppService.GetCurrentLoginInformations (LiusStore.Application)'
+INFO  2020-08-09 02:55:10,196 [58   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing controller action with signature System.Threading.Tasks.Task`1[LiusStore.Sessions.Dto.GetCurrentLoginInformationsOutput] GetCurrentLoginInformations() on controller LiusStore.Sessions.SessionAppService (LiusStore.Application).
+INFO  2020-08-09 02:55:10,199 [58   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:55:10,200 [58   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Sessions.SessionAppService.GetCurrentLoginInformations (LiusStore.Application) in 3.5711ms
+INFO  2020-08-09 02:55:10,200 [58   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Sessions.SessionAppService.GetCurrentLoginInformations (LiusStore.Application)'
+INFO  2020-08-09 02:55:10,200 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10.7909ms 200 application/json; charset=utf-8
+INFO  2020-08-09 02:55:31,047 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/TokenAuth/Authenticate  
+INFO  2020-08-09 02:55:31,047 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:31,048 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.2482ms 204 
+INFO  2020-08-09 02:55:31,051 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json-patch+json 77
+INFO  2020-08-09 02:55:31,051 [58   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:31,056 [58   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core)'
+INFO  2020-08-09 02:55:31,061 [58   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LiusStore.Models.TokenAuth.AuthenticateResultModel] Authenticate(LiusStore.Models.TokenAuth.AuthenticateModel) on controller LiusStore.Controllers.TokenAuthController (LiusStore.Web.Core).
+INFO  2020-08-09 02:55:31,297 [63   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:55:31,300 [63   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core) in 238.944ms
+INFO  2020-08-09 02:55:31,300 [63   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core)'
+INFO  2020-08-09 02:55:31,300 [63   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 249.6528ms 200 application/json; charset=utf-8
+INFO  2020-08-09 02:55:31,802 [63   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2020-08-09 02:55:31,802 [63   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:31,803 [63   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 0.7155ms 204 
+INFO  2020-08-09 02:55:31,805 [63   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2020-08-09 02:55:31,806 [63   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:31,847 [63   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2020-08-09 02:55:31,916 [60   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)'
+INFO  2020-08-09 02:55:31,918 [60   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] GetAll() on controller Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController (Abp.AspNetCore).
+INFO  2020-08-09 02:55:31,999 [52   ] tonsoftJson.NewtonsoftJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:55:32,000 [52   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 81.0042ms
+INFO  2020-08-09 02:55:32,000 [52   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)'
+INFO  2020-08-09 02:55:32,000 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 195.0467ms 200 application/json; charset=utf-8
+INFO  2020-08-09 02:55:32,010 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2020-08-09 02:55:32,010 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:32,010 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 0.4887ms 204 
+INFO  2020-08-09 02:55:32,012 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2020-08-09 02:55:32,012 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:32,012 [52   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2020-08-09 02:55:32,013 [52   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Sessions.SessionAppService.GetCurrentLoginInformations (LiusStore.Application)'
+INFO  2020-08-09 02:55:32,015 [52   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing controller action with signature System.Threading.Tasks.Task`1[LiusStore.Sessions.Dto.GetCurrentLoginInformationsOutput] GetCurrentLoginInformations() on controller LiusStore.Sessions.SessionAppService (LiusStore.Application).
+INFO  2020-08-09 02:55:32,036 [58   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:55:32,039 [58   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Sessions.SessionAppService.GetCurrentLoginInformations (LiusStore.Application) in 23.8411ms
+INFO  2020-08-09 02:55:32,039 [58   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Sessions.SessionAppService.GetCurrentLoginInformations (LiusStore.Application)'
+INFO  2020-08-09 02:55:32,039 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 27.3401ms 200 application/json; charset=utf-8
+INFO  2020-08-09 02:55:32,192 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:21021/signalr/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FQR4Nl%2FDPnoP9JYDMpZ1zxx09u6s0GZ9%2FQ5Sjk%2BL0UfcSCbl38X8he5w9UIn%2FHvxh7ysM1CiPLsoOwtbiieSRVmrmt0JjnipAn4%2FK283F8GrGwzwgehWsqefmUnM0ckMwP9ZAdwQxWDhxv0IqNw4tDhwUYs%2F1SYdYozdNzgByhgNOBPzQDObNLlWc4vV5VMOiaT2XC6%2Fet09jFhm%2Bg%2FJx621ClAJCGHoDX9FPtJlcoqyieTiOIFqbDSUaNTC0dfd3swFDhSu3REPlMdfCYZSI%2BXbygDGv4QbPkZ7qy3s6ALcYWp8wQZLCOk8Myits%2Fl8tFzWGLIW%2BjMqEox2kHN3R08Z%2B5FgYEA2k72hMYt4%2FH26n4VDGDR%2Ba5bYZ1kZyBxeFDzxVju5e%2BH%2BSJ0Yn9eXqSYdRr23fEhyn15LdxXE%2BNjW7At6W9xOnPRhT00hTyhhbXyU2Qz%2F6gDucZ9v%2Fw7yIe6p%2FoLaFvKtlITVFQfwgczy68w0fRSkHQ7LnfKlEsdIa992L1r9nsy9FpsKw%2FrCpoKsUeewZLNMl545gGtwXzSW50qfznMsXLNYE2IG%2FuWPhNvuIIgMVlqLbXC80f6fN3lF27rZG1Rh5tj8ESp%2BfDod9Ri6YhUbjPSqYo5reYxiVDJwtdvMy5rRCTiym%2FZiMguXS1Hkxl%2BMYz3uGbbXBbx4XLRtWGC3FB4TnnWU0iIS2E%3D  
+INFO  2020-08-09 02:55:32,192 [58   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:32,192 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 0.5901ms 204 
+INFO  2020-08-09 02:55:32,195 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FQR4Nl%2FDPnoP9JYDMpZ1zxx09u6s0GZ9%2FQ5Sjk%2BL0UfcSCbl38X8he5w9UIn%2FHvxh7ysM1CiPLsoOwtbiieSRVmrmt0JjnipAn4%2FK283F8GrGwzwgehWsqefmUnM0ckMwP9ZAdwQxWDhxv0IqNw4tDhwUYs%2F1SYdYozdNzgByhgNOBPzQDObNLlWc4vV5VMOiaT2XC6%2Fet09jFhm%2Bg%2FJx621ClAJCGHoDX9FPtJlcoqyieTiOIFqbDSUaNTC0dfd3swFDhSu3REPlMdfCYZSI%2BXbygDGv4QbPkZ7qy3s6ALcYWp8wQZLCOk8Myits%2Fl8tFzWGLIW%2BjMqEox2kHN3R08Z%2B5FgYEA2k72hMYt4%2FH26n4VDGDR%2Ba5bYZ1kZyBxeFDzxVju5e%2BH%2BSJ0Yn9eXqSYdRr23fEhyn15LdxXE%2BNjW7At6W9xOnPRhT00hTyhhbXyU2Qz%2F6gDucZ9v%2Fw7yIe6p%2FoLaFvKtlITVFQfwgczy68w0fRSkHQ7LnfKlEsdIa992L1r9nsy9FpsKw%2FrCpoKsUeewZLNMl545gGtwXzSW50qfznMsXLNYE2IG%2FuWPhNvuIIgMVlqLbXC80f6fN3lF27rZG1Rh5tj8ESp%2BfDod9Ri6YhUbjPSqYo5reYxiVDJwtdvMy5rRCTiym%2FZiMguXS1Hkxl%2BMYz3uGbbXBbx4XLRtWGC3FB4TnnWU0iIS2E%3D text/plain;charset=UTF-8 0
+INFO  2020-08-09 02:55:32,196 [58   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:32,201 [58   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2020-08-09 02:55:32,202 [58   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2020-08-09 02:55:32,212 [58   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2020-08-09 02:55:32,212 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.9584ms 200 application/json
+INFO  2020-08-09 02:55:32,221 [52   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/signalr?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FQR4Nl%2FDPnoP9JYDMpZ1zxx09u6s0GZ9%2FQ5Sjk%2BL0UfcSCbl38X8he5w9UIn%2FHvxh7ysM1CiPLsoOwtbiieSRVmrmt0JjnipAn4%2FK283F8GrGwzwgehWsqefmUnM0ckMwP9ZAdwQxWDhxv0IqNw4tDhwUYs%2F1SYdYozdNzgByhgNOBPzQDObNLlWc4vV5VMOiaT2XC6%2Fet09jFhm%2Bg%2FJx621ClAJCGHoDX9FPtJlcoqyieTiOIFqbDSUaNTC0dfd3swFDhSu3REPlMdfCYZSI%2BXbygDGv4QbPkZ7qy3s6ALcYWp8wQZLCOk8Myits%2Fl8tFzWGLIW%2BjMqEox2kHN3R08Z%2B5FgYEA2k72hMYt4%2FH26n4VDGDR%2Ba5bYZ1kZyBxeFDzxVju5e%2BH%2BSJ0Yn9eXqSYdRr23fEhyn15LdxXE%2BNjW7At6W9xOnPRhT00hTyhhbXyU2Qz%2F6gDucZ9v%2Fw7yIe6p%2FoLaFvKtlITVFQfwgczy68w0fRSkHQ7LnfKlEsdIa992L1r9nsy9FpsKw%2FrCpoKsUeewZLNMl545gGtwXzSW50qfznMsXLNYE2IG%2FuWPhNvuIIgMVlqLbXC80f6fN3lF27rZG1Rh5tj8ESp%2BfDod9Ri6YhUbjPSqYo5reYxiVDJwtdvMy5rRCTiym%2FZiMguXS1Hkxl%2BMYz3uGbbXBbx4XLRtWGC3FB4TnnWU0iIS2E%3D&id=wJnoUAk9nttua5neExoiQw  
+INFO  2020-08-09 02:55:32,222 [52   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:32,225 [52   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2020-08-09 02:55:32,225 [52   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2020-08-09 02:55:32,267 [58   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"wJnoUAk9nttua5neExoiQw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-08-09T02:55:32.2622475+08:00","Properties":{}}
+DEBUG 2020-08-09 02:55:32,278 [58   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: wJnoUAk9nttua5neExoiQw
+INFO  2020-08-09 02:55:37,810 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Tenant/GetAll?Keyword=&SkipCount=0&MaxResultCount=10  
+INFO  2020-08-09 02:55:37,810 [58   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:37,811 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 0.8849ms 204 
+INFO  2020-08-09 02:55:37,820 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Tenant/GetAll?Keyword=&SkipCount=0&MaxResultCount=10  
+INFO  2020-08-09 02:55:37,821 [58   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution successful.
+INFO  2020-08-09 02:55:37,823 [58   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2020-08-09 02:55:37,824 [58   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.MultiTenancy.TenantAppService.GetAllAsync (LiusStore.Application)'
+INFO  2020-08-09 02:55:37,833 [58   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Tenant"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[LiusStore.MultiTenancy.Dto.TenantDto]] GetAllAsync(LiusStore.MultiTenancy.Dto.PagedTenantResultRequestDto) on controller LiusStore.MultiTenancy.TenantAppService (LiusStore.Application).
+ERROR 2020-08-09 02:55:38,030 [58   ] Mvc.ExceptionHandling.AbpExceptionFilter - 'OFFSET' 附近有语法错误。
+在 FETCH 语句中选项 NEXT 的用法无效。
+Microsoft.Data.SqlClient.SqlException (0x80131904): 'OFFSET' 附近有语法错误。
+在 FETCH 语句中选项 NEXT 的用法无效。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Abp.Application.Services.AsyncCrudAppService`8.GetAllAsync(TGetAllInput input)
+   at Abp.Authorization.AuthorizationInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at Abp.Auditing.AuditingInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ClientConnectionId:10009ba4-1b33-4c48-b60b-6b9895dc033c
+Error Number:102,State:1,Class:15
+INFO  2020-08-09 02:55:38,032 [58   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 02:55:38,032 [58   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.MultiTenancy.TenantAppService.GetAllAsync (LiusStore.Application) in 199.1539ms
+INFO  2020-08-09 02:55:38,032 [58   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.MultiTenancy.TenantAppService.GetAllAsync (LiusStore.Application)'
+INFO  2020-08-09 02:55:38,032 [58   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 212.0204ms 500 application/json; charset=utf-8
+DEBUG 2020-08-09 02:56:34,729 [65   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: wJnoUAk9nttua5neExoiQw
+INFO  2020-08-09 02:56:34,736 [65   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2020-08-09 02:56:34,736 [65   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 62515.1096ms 101 
+DEBUG 2020-08-09 11:59:28,167 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-08-09 11:59:28,394 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-08-09 11:59:28,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.Web.Host.Startup.LiusStoreWebHostModule, LiusStore.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,410 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.LiusStoreWebCoreModule, LiusStore.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.LiusStoreApplicationModule, LiusStore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.LiusStoreCoreModule, LiusStore.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,411 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LiusStore.EntityFrameworkCore.LiusStoreEntityFrameworkModule, LiusStore.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,412 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,413 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.10.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:28,415 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-08-09 11:59:28,595 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-08-09 11:59:28,595 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-08-09 11:59:28,595 [1    ] o.Configuration.LanguageManagementConfig - Converted LiusStore (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-08-09 11:59:28,595 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-08-09 11:59:29,061 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: LiusStore.EntityFrameworkCore.LiusStoreDbContext, LiusStore.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-08-09 11:59:29,515 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-08-09 11:59:29,585 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-08-09 11:59:29,631 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-08-09 11:59:29,650 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LiusStore
+DEBUG 2020-08-09 11:59:29,681 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-08-09 11:59:29,719 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-08-09 11:59:29,741 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[LiusStore.MultiTenancy.Tenant, LiusStore.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[LiusStore.Authorization.Users.User, LiusStore.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-08-09 11:59:29,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-08-09 11:59:29,773 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-08-09 11:59:29,778 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Users.Dto.CreateUserDto
+DEBUG 2020-08-09 11:59:29,778 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Users.Dto.UserDto
+DEBUG 2020-08-09 11:59:29,778 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-08-09 11:59:29,778 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-08-09 11:59:29,778 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.Roles.Dto.PermissionDto
+DEBUG 2020-08-09 11:59:29,778 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-08-09 11:59:29,779 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LiusStore.MultiTenancy.Dto.TenantDto
+INFO  2020-08-09 11:59:31,873 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,zh-Hans,ja
+INFO  2020-08-09 11:59:32,243 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\shybo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-08-09 11:59:32,278 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-08-09 11:59:32,441 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Web.Host.Controllers.HomeController.Index (LiusStore.Web.Host)'
+INFO  2020-08-09 11:59:33,327 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LiusStore.Web.Host.Controllers.HomeController (LiusStore.Web.Host).
+INFO  2020-08-09 11:59:33,819 [15   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-08-09 11:59:33,823 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Web.Host.Controllers.HomeController.Index (LiusStore.Web.Host) in 492.2321ms
+INFO  2020-08-09 11:59:33,823 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Web.Host.Controllers.HomeController.Index (LiusStore.Web.Host)'
+INFO  2020-08-09 11:59:33,834 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1556.1804ms 302 
+INFO  2020-08-09 11:59:33,840 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-08-09 11:59:33,879 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 38.6947ms 200 text/html;charset=utf-8
+INFO  2020-08-09 11:59:33,941 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2020-08-09 11:59:33,945 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.js was not modified
+INFO  2020-08-09 11:59:33,946 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5.6747ms 304 application/javascript
+INFO  2020-08-09 11:59:33,947 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2020-08-09 11:59:33,948 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.swagger.js was not modified
+INFO  2020-08-09 11:59:33,948 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1.0137ms 304 application/javascript
+INFO  2020-08-09 11:59:34,437 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 54
+INFO  2020-08-09 11:59:34,443 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core)'
+INFO  2020-08-09 11:59:34,459 [12   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LiusStore.Models.TokenAuth.AuthenticateResultModel] Authenticate(LiusStore.Models.TokenAuth.AuthenticateModel) on controller LiusStore.Controllers.TokenAuthController (LiusStore.Web.Core).
+INFO  2020-08-09 11:59:34,623 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-08-09 11:59:34,625 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 11:59:34,630 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller LiusStore.Web.Host.Controllers.AntiForgeryController (LiusStore.Web.Host).
+INFO  2020-08-09 11:59:34,655 [15   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 11:59:34,662 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-08-09 11:59:34,755 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host) in 124.5459ms
+INFO  2020-08-09 11:59:34,755 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 11:59:34,755 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 132.3058ms 200 application/json; charset=utf-8
+INFO  2020-08-09 11:59:34,770 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 107.5716ms 200 application/json;charset=utf-8
+INFO  2020-08-09 11:59:35,160 [4    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 11:59:35,163 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core) in 704.1764ms
+INFO  2020-08-09 11:59:35,163 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core)'
+INFO  2020-08-09 11:59:35,164 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 726.7869ms 200 application/json; charset=utf-8
+INFO  2020-08-09 12:00:01,353 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 54
+INFO  2020-08-09 12:00:01,361 [13   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-08-09 12:00:01,361 [13   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-08-09 12:00:01,367 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core)'
+INFO  2020-08-09 12:00:01,373 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LiusStore.Models.TokenAuth.AuthenticateResultModel] Authenticate(LiusStore.Models.TokenAuth.AuthenticateModel) on controller LiusStore.Controllers.TokenAuthController (LiusStore.Web.Core).
+INFO  2020-08-09 12:00:01,408 [15   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 12:00:01,409 [15   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core) in 35.8935ms
+INFO  2020-08-09 12:00:01,409 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Controllers.TokenAuthController.Authenticate (LiusStore.Web.Core)'
+INFO  2020-08-09 12:00:01,409 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 56.0537ms 200 application/json; charset=utf-8
+INFO  2020-08-09 12:00:01,417 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-08-09 12:00:01,419 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2.6923ms 200 text/html;charset=utf-8
+INFO  2020-08-09 12:00:01,539 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-08-09 12:00:01,571 [21   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2020-08-09 12:00:01,585 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-08-09 12:00:01,586 [4    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2020-08-09 12:00:01,613 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 12:00:01,616 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller LiusStore.Web.Host.Controllers.AntiForgeryController (LiusStore.Web.Host).
+INFO  2020-08-09 12:00:01,620 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 12:00:01,620 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host) in 4.4439ms
+INFO  2020-08-09 12:00:01,620 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 12:00:01,621 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 81.7263ms 200 application/json; charset=utf-8
+INFO  2020-08-09 12:00:01,625 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 40.7153ms 200 application/json;charset=utf-8
+INFO  2020-08-09 12:00:14,218 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-08-09 12:00:14,223 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5.3771ms 200 text/html;charset=utf-8
+INFO  2020-08-09 12:00:14,311 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-08-09 12:00:14,312 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 12:00:14,315 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller LiusStore.Web.Host.Controllers.AntiForgeryController (LiusStore.Web.Host).
+INFO  2020-08-09 12:00:14,328 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-08-09 12:00:14,330 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 12:00:14,331 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host) in 15.6487ms
+INFO  2020-08-09 12:00:14,331 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Web.Host.Controllers.AntiForgeryController.SetCookie (LiusStore.Web.Host)'
+INFO  2020-08-09 12:00:14,332 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 20.8493ms 200 application/json; charset=utf-8
+INFO  2020-08-09 12:00:14,342 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.8885ms 200 application/json;charset=utf-8
+INFO  2020-08-09 12:00:23,186 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json 21
+INFO  2020-08-09 12:00:23,187 [13   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-08-09 12:00:23,188 [13   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-08-09 12:00:23,190 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LiusStore.Authorization.Accounts.AccountAppService.IsTenantAvailable (LiusStore.Application)'
+INFO  2020-08-09 12:00:23,196 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[LiusStore.Authorization.Accounts.Dto.IsTenantAvailableOutput] IsTenantAvailable(LiusStore.Authorization.Accounts.Dto.IsTenantAvailableInput) on controller LiusStore.Authorization.Accounts.AccountAppService (LiusStore.Application).
+INFO  2020-08-09 12:00:23,235 [13   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-08-09 12:00:23,238 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action LiusStore.Authorization.Accounts.AccountAppService.IsTenantAvailable (LiusStore.Application) in 41.6141ms
+INFO  2020-08-09 12:00:23,238 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LiusStore.Authorization.Accounts.AccountAppService.IsTenantAvailable (LiusStore.Application)'
+INFO  2020-08-09 12:00:23,238 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 51.699ms 200 application/json; charset=utf-8
