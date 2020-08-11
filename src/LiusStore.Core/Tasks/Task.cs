@@ -6,18 +6,19 @@ using System.Text;
 
 namespace LiusStore.Tasks
 {
+    [Table("AppTasks")]
     public class Task : Entity<long>
     {
-        [ForeignKey("AssignedPersonId")]
-        public virtual Person AssignedPerson { get; set; }
+        [ForeignKey(nameof(AssignedPersonId))]
+        public Person AssignedPerson { get; set; }
 
-        public virtual int? AssignedPersonId { get; set; }
+        public int? AssignedPersonId { get; set; }
 
-        public virtual string Description { get; set; }
+        public string Description { get; set; }
 
-        public virtual DateTime CreationTime { get; set; }
+        public DateTime CreationTime { get; set; }
 
-        public virtual TaskState State { get; set; }
+        public TaskState State { get; set; }
 
         public Task()
         {

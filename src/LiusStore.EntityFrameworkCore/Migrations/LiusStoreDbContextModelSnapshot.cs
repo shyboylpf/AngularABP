@@ -107,19 +107,24 @@ namespace LiusStore.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("BrowserInfo")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(512)")
+                        .HasMaxLength(512);
 
                     b.Property<string>("ClientIpAddress")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
 
                     b.Property<string>("ClientName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
 
                     b.Property<string>("CustomData")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
                     b.Property<string>("Exception")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(2000)")
+                        .HasMaxLength(2000);
 
                     b.Property<int>("ExecutionDuration")
                         .HasColumnType("int");
@@ -134,16 +139,19 @@ namespace LiusStore.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<string>("MethodName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("Parameters")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(1024)")
+                        .HasMaxLength(1024);
 
                     b.Property<string>("ReturnValue")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ServiceName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<int?>("TenantId")
                         .HasColumnType("int");
@@ -152,6 +160,12 @@ namespace LiusStore.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TenantId", "ExecutionDuration");
+
+                    b.HasIndex("TenantId", "ExecutionTime");
+
+                    b.HasIndex("TenantId", "UserId");
 
                     b.ToTable("AbpAuditLogs");
                 });
@@ -185,6 +199,8 @@ namespace LiusStore.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TenantId", "Name");
 
                     b.ToTable("AbpPermissions");
 
@@ -220,6 +236,8 @@ namespace LiusStore.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("RoleId");
+
+                    b.HasIndex("TenantId", "ClaimType");
 
                     b.ToTable("AbpRoleClaims");
                 });
@@ -271,6 +289,16 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("EmailAddress");
+
+                    b.HasIndex("UserName");
+
+                    b.HasIndex("TenantId", "EmailAddress");
+
+                    b.HasIndex("TenantId", "UserId");
+
+                    b.HasIndex("TenantId", "UserName");
+
                     b.ToTable("AbpUserAccounts");
                 });
 
@@ -302,6 +330,10 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("TenantId", "ClaimType");
+
                     b.ToTable("AbpUserClaims");
                 });
 
@@ -329,6 +361,12 @@ namespace LiusStore.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("TenantId", "UserId");
+
+                    b.HasIndex("TenantId", "LoginProvider", "ProviderKey");
 
                     b.ToTable("AbpUserLogins");
                 });
@@ -374,6 +412,10 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId", "TenantId");
+
+                    b.HasIndex("TenancyName", "UserNameOrEmailAddress", "Result");
+
                     b.ToTable("AbpUserLoginAttempts");
                 });
 
@@ -404,6 +446,10 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("TenantId", "OrganizationUnitId");
+
+                    b.HasIndex("TenantId", "UserId");
+
                     b.ToTable("AbpUserOrganizationUnits");
                 });
 
@@ -430,6 +476,12 @@ namespace LiusStore.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("TenantId", "RoleId");
+
+                    b.HasIndex("TenantId", "UserId");
 
                     b.ToTable("AbpUserRoles");
                 });
@@ -463,6 +515,10 @@ namespace LiusStore.Migrations
                         .HasMaxLength(512);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("TenantId", "UserId");
 
                     b.ToTable("AbpUserTokens");
                 });
@@ -507,6 +563,8 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IsAbandoned", "NextTryTime");
+
                     b.ToTable("AbpBackgroundJobs");
                 });
 
@@ -545,6 +603,11 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("TenantId", "Name", "UserId")
+                        .IsUnique();
+
                     b.ToTable("AbpSettings");
                 });
 
@@ -559,7 +622,7 @@ namespace LiusStore.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ParameterName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Permission")
                         .HasColumnType("nvarchar(max)");
@@ -568,6 +631,10 @@ namespace LiusStore.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ParameterName", "TenantId")
+                        .IsUnique()
+                        .HasFilter("[ParameterName] IS NOT NULL AND [TenantId] IS NOT NULL");
 
                     b.ToTable("AbpDynamicParameters");
                 });
@@ -607,7 +674,7 @@ namespace LiusStore.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("EntityFullName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int?>("TenantId")
                         .HasColumnType("int");
@@ -615,6 +682,10 @@ namespace LiusStore.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("DynamicParameterId");
+
+                    b.HasIndex("EntityFullName", "DynamicParameterId", "TenantId")
+                        .IsUnique()
+                        .HasFilter("[EntityFullName] IS NOT NULL AND [TenantId] IS NOT NULL");
 
                     b.ToTable("AbpEntityDynamicParameters");
                 });
@@ -677,6 +748,8 @@ namespace LiusStore.Migrations
 
                     b.HasIndex("EntityChangeSetId");
 
+                    b.HasIndex("EntityTypeFullName", "EntityId");
+
                     b.ToTable("AbpEntityChanges");
                 });
 
@@ -722,6 +795,12 @@ namespace LiusStore.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TenantId", "CreationTime");
+
+                    b.HasIndex("TenantId", "Reason");
+
+                    b.HasIndex("TenantId", "UserId");
 
                     b.ToTable("AbpEntityChangeSets");
                 });
@@ -812,6 +891,8 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("TenantId", "Name");
+
                     b.ToTable("AbpLanguages");
                 });
 
@@ -858,6 +939,8 @@ namespace LiusStore.Migrations
                         .HasMaxLength(67108864);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TenantId", "Source", "LanguageName", "Key");
 
                     b.ToTable("AbpLanguageTexts");
                 });
@@ -955,6 +1038,10 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("NotificationName", "EntityTypeName", "EntityId", "UserId");
+
+                    b.HasIndex("TenantId", "NotificationName", "EntityTypeName", "EntityId", "UserId");
+
                     b.ToTable("AbpNotificationSubscriptions");
                 });
 
@@ -1003,6 +1090,8 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("TenantId");
+
                     b.ToTable("AbpTenantNotifications");
                 });
 
@@ -1028,6 +1117,8 @@ namespace LiusStore.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId", "State", "CreationTime");
 
                     b.ToTable("AbpUserNotifications");
                 });
@@ -1080,6 +1171,8 @@ namespace LiusStore.Migrations
 
                     b.HasIndex("ParentId");
 
+                    b.HasIndex("TenantId", "Code");
+
                     b.ToTable("AbpOrganizationUnits");
                 });
 
@@ -1109,6 +1202,10 @@ namespace LiusStore.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TenantId", "OrganizationUnitId");
+
+                    b.HasIndex("TenantId", "RoleId");
 
                     b.ToTable("AbpOrganizationUnitRoles");
                 });
@@ -1222,6 +1319,7 @@ namespace LiusStore.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
                         .HasColumnType("nvarchar(128)")
                         .HasMaxLength(128);
 
@@ -1276,7 +1374,142 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CreatorUserId");
+
+                    b.HasIndex("DeleterUserId");
+
+                    b.HasIndex("LastModifierUserId");
+
+                    b.HasIndex("TenantId", "NormalizedName");
+
                     b.ToTable("AbpRoles");
+                });
+
+            modelBuilder.Entity("LiusStore.Authorization.Users.User", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("AuthenticationSource")
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("CreatorUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("DeleterUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("DeletionTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("EmailAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("EmailConfirmationCode")
+                        .HasColumnType("nvarchar(328)")
+                        .HasMaxLength(328);
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsEmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsLockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsTwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastModificationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("LastModifierUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("LockoutEndDateUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
+
+                    b.Property<string>("NormalizedEmailAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedUserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<string>("PasswordResetCode")
+                        .HasColumnType("nvarchar(328)")
+                        .HasMaxLength(328);
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(32)")
+                        .HasMaxLength(32);
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(64)")
+                        .HasMaxLength(64);
+
+                    b.Property<int?>("TenantId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatorUserId");
+
+                    b.HasIndex("DeleterUserId");
+
+                    b.HasIndex("LastModifierUserId");
+
+                    b.HasIndex("TenantId", "NormalizedEmailAddress");
+
+                    b.HasIndex("TenantId", "NormalizedUserName");
+
+                    b.ToTable("AbpUsers");
                 });
 
             modelBuilder.Entity("LiusStore.MultiTenancy.Tenant", b =>
@@ -1329,7 +1562,15 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CreatorUserId");
+
+                    b.HasIndex("DeleterUserId");
+
                     b.HasIndex("EditionId");
+
+                    b.HasIndex("LastModifierUserId");
+
+                    b.HasIndex("TenancyName");
 
                     b.ToTable("AbpTenants");
                 });
@@ -1346,29 +1587,33 @@ namespace LiusStore.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Person");
+                    b.ToTable("AppPersons");
+                });
 
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Isaac Asimov"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Thomas More"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "George Orwell"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Douglas Adams"
-                        });
+            modelBuilder.Entity("LiusStore.Tasks.Task", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("AssignedPersonId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte>("State")
+                        .HasColumnType("tinyint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AssignedPersonId");
+
+                    b.ToTable("AppTasks");
                 });
 
             modelBuilder.Entity("Abp.Application.Features.EditionFeatureSetting", b =>
@@ -1378,7 +1623,7 @@ namespace LiusStore.Migrations
                     b.Property<int>("EditionId")
                         .HasColumnType("int");
 
-                    b.HasIndex("EditionId");
+                    b.HasIndex("EditionId", "Name");
 
                     b.ToTable("AbpFeatures");
 
@@ -1388,6 +1633,8 @@ namespace LiusStore.Migrations
             modelBuilder.Entity("Abp.MultiTenancy.TenantFeatureSetting", b =>
                 {
                     b.HasBaseType("Abp.Application.Features.FeatureSetting");
+
+                    b.HasIndex("TenantId", "Name");
 
                     b.ToTable("AbpFeatures");
 
@@ -1415,6 +1662,8 @@ namespace LiusStore.Migrations
                     b.Property<long>("UserId")
                         .HasColumnType("bigint");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("AbpPermissions");
 
                     b.HasDiscriminator().HasValue("UserPermissionSetting");
@@ -1427,6 +1676,49 @@ namespace LiusStore.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Abp.Authorization.Users.UserClaim", b =>
+                {
+                    b.HasOne("LiusStore.Authorization.Users.User", null)
+                        .WithMany("Claims")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Abp.Authorization.Users.UserLogin", b =>
+                {
+                    b.HasOne("LiusStore.Authorization.Users.User", null)
+                        .WithMany("Logins")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Abp.Authorization.Users.UserRole", b =>
+                {
+                    b.HasOne("LiusStore.Authorization.Users.User", null)
+                        .WithMany("Roles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Abp.Authorization.Users.UserToken", b =>
+                {
+                    b.HasOne("LiusStore.Authorization.Users.User", null)
+                        .WithMany("Tokens")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Abp.Configuration.Setting", b =>
+                {
+                    b.HasOne("LiusStore.Authorization.Users.User", null)
+                        .WithMany("Settings")
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Abp.DynamicEntityParameters.DynamicParameterValue", b =>
@@ -1490,11 +1782,60 @@ namespace LiusStore.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("LiusStore.Authorization.Roles.Role", b =>
+                {
+                    b.HasOne("LiusStore.Authorization.Users.User", "CreatorUser")
+                        .WithMany()
+                        .HasForeignKey("CreatorUserId");
+
+                    b.HasOne("LiusStore.Authorization.Users.User", "DeleterUser")
+                        .WithMany()
+                        .HasForeignKey("DeleterUserId");
+
+                    b.HasOne("LiusStore.Authorization.Users.User", "LastModifierUser")
+                        .WithMany()
+                        .HasForeignKey("LastModifierUserId");
+                });
+
+            modelBuilder.Entity("LiusStore.Authorization.Users.User", b =>
+                {
+                    b.HasOne("LiusStore.Authorization.Users.User", "CreatorUser")
+                        .WithMany()
+                        .HasForeignKey("CreatorUserId");
+
+                    b.HasOne("LiusStore.Authorization.Users.User", "DeleterUser")
+                        .WithMany()
+                        .HasForeignKey("DeleterUserId");
+
+                    b.HasOne("LiusStore.Authorization.Users.User", "LastModifierUser")
+                        .WithMany()
+                        .HasForeignKey("LastModifierUserId");
+                });
+
             modelBuilder.Entity("LiusStore.MultiTenancy.Tenant", b =>
                 {
+                    b.HasOne("LiusStore.Authorization.Users.User", "CreatorUser")
+                        .WithMany()
+                        .HasForeignKey("CreatorUserId");
+
+                    b.HasOne("LiusStore.Authorization.Users.User", "DeleterUser")
+                        .WithMany()
+                        .HasForeignKey("DeleterUserId");
+
                     b.HasOne("Abp.Application.Editions.Edition", "Edition")
                         .WithMany()
                         .HasForeignKey("EditionId");
+
+                    b.HasOne("LiusStore.Authorization.Users.User", "LastModifierUser")
+                        .WithMany()
+                        .HasForeignKey("LastModifierUserId");
+                });
+
+            modelBuilder.Entity("LiusStore.Tasks.Task", b =>
+                {
+                    b.HasOne("LiusStore.Tasks.Person", "AssignedPerson")
+                        .WithMany()
+                        .HasForeignKey("AssignedPersonId");
                 });
 
             modelBuilder.Entity("Abp.Application.Features.EditionFeatureSetting", b =>
@@ -1511,6 +1852,15 @@ namespace LiusStore.Migrations
                     b.HasOne("LiusStore.Authorization.Roles.Role", null)
                         .WithMany("Permissions")
                         .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Abp.Authorization.Users.UserPermissionSetting", b =>
+                {
+                    b.HasOne("LiusStore.Authorization.Users.User", null)
+                        .WithMany("Permissions")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
