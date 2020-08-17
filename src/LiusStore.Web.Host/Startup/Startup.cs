@@ -18,6 +18,7 @@ using Abp.Dependency;
 using Abp.Json;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
+using Abp.PlugIns;
 
 namespace LiusStore.Web.Host.Startup
 {
@@ -49,8 +50,6 @@ namespace LiusStore.Web.Host.Startup
                     NamingStrategy = new CamelCaseNamingStrategy()
                 };
             });
-
-
 
             IdentityRegistrar.Register(services);
             AuthConfigurer.Configure(services, _appConfiguration);
@@ -108,7 +107,10 @@ namespace LiusStore.Web.Host.Startup
                 });
             });
 
-            // Configure Abp and Dependency Injection
+            // 我想注册IOC函数运行时长评估的拦截器 , 可明显 , 这么写有问题
+            //services.AddAbp<InterceptionDemoApplicationModule>();
+
+            // Configure Abp and Dependency Injection. Should be called last.
             return services.AddAbp<LiusStoreWebHostModule>(
                 // Configure Log4Net logging
                 options => options.IocManager.IocContainer.AddFacility<LoggingFacility>(
@@ -117,7 +119,7 @@ namespace LiusStore.Web.Host.Startup
             );
         }
 
-        public void Configure(IApplicationBuilder app,  ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
             app.UseAbp(options => { options.UseAbpRequestLocalization = false; }); // Initializes ABP framework.
 
@@ -131,7 +133,6 @@ namespace LiusStore.Web.Host.Startup
 
             app.UseAbpRequestLocalization();
 
-          
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHub<AbpCommonHub>("/signalr");
@@ -149,7 +150,7 @@ namespace LiusStore.Web.Host.Startup
                 options.SwaggerEndpoint($"/swagger/{_apiVersion}/swagger.json", $"LiusStore API {_apiVersion}");
                 options.IndexStream = () => Assembly.GetExecutingAssembly()
                     .GetManifestResourceStream("LiusStore.Web.Host.wwwroot.swagger.ui.index.html");
-                options.DisplayRequestDuration(); // Controls the display of the request duration (in milliseconds) for "Try it out" requests.  
+                options.DisplayRequestDuration(); // Controls the display of the request duration (in milliseconds) for "Try it out" requests.
             }); // URL: /swagger
         }
     }

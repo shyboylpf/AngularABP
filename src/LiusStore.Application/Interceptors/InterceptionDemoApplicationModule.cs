@@ -1,9 +1,10 @@
 ﻿using Abp.Modules;
+using LiusStore.Interceptors;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace LiusStore.Interceptors
+namespace LiusStore
 {
     public class InterceptionDemoApplicationModule : AbpModule
     {

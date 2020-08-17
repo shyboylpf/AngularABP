@@ -27,7 +27,7 @@ namespace LiusStore.Interceptors
             // After method execution.
             // 方法执行结束
             stopwatch.Stop();
-            Logger.InfoFormat("MeasureDurationInterceptor: {0} executed in {1} milliseconds.",
+            Logger.InfoFormat("执行时间度量拦截器: {0} executed in {1} milliseconds.",
                 invocation.MethodInvocationTarget.Name,
                 stopwatch.ElapsedMilliseconds.ToString("0.000"));
         }
